@@ -97,6 +97,6 @@ public class MyCalendarPrinter {
 
     public static boolean isUru(Integer year) {
         // TODO: create method
-        return true;
+        return year % 400 == 0 || (!(year % 100 == 0) && year % 4 == 0);
     }
 }
